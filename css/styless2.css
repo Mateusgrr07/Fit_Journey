@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #313030;
+}
+
+.box {
+    width: 30%;
+    border-radius: 10px;
+    padding: 1em;
+    background-color: #cf4018;
+    border-color: #000;
+    border: 2px solid #000;
+}
+
+header {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    text-transform: uppercase;
+}
+
+.nome-input,
+.email-input,
+.senha-input,
+.conf-senha {
+    margin-bottom: 1.5em;
+    height: 35px;
+    border-radius: 7px;
+    border: none;
+    border-bottom: 2px solid #000;
+
+}
+
+div {
+    display: flex;
+    justify-content: space-around;
+
+    input {
+        height: 30px;
+        border: none;
+        border-radius: 4px;
+        color: #ffff;
+        text-transform: uppercase;
+    }
+}
+
+.cadastrar {
+    background-color: rgb(15, 243, 15);
+
+    &:hover {
+        background-color: yellow;
+        color: #000;
+    }
+}
+
+.limpar {
+    background-color: #313030;
+
+    &:hover {
+        background-color: #ffffff;
+        color: #000;
+    }
+}
