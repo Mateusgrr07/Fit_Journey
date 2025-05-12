@@ -21,8 +21,9 @@
     display: block;
     margin-left: auto;
     margin-right: 0;
-    width: auto; /* mantém o tamanho normal da imagem */
+    width: 25%; /* mantém o tamanho normal da imagem */
     max-width: 100%; /* garante que ela não quebre o layout em telas pequenas */
+    margin-top: -350px;
 }
 
 footer{
@@ -37,15 +38,15 @@ footer{
 .motivacional {
     font-size: 20px;  /* Tamanho menor */
     text-align: right;  /* Alinha o texto à direita */
-    margin-top: -300px;  /* Move a frase para cima */
+    margin-top:25px;  /* Move a frase para cima */
     margin-right: 50px;  /* Espaço à direita */
     margin-bottom: auto;
 }
 
 /* Frase centralizada (preta e laranja) */
 .titulo-centralizado {
-    text-align: center;  /* Centraliza o texto */
-    margin-top: auto;  /* Move a frase para baixo */
+    text-align: left;  /* Centraliza o texto */
+    margin-top: 200px;  /* Move a frase para baixo */
     font-size: 50px;  /* Ajuste de tamanho, conforme necessário */
     font-family: sans-serif;
 }
@@ -58,8 +59,9 @@ footer{
 /* Botão Inscrição */
 .inscricao-container {
     display: flex;
-    justify-content: center;
-    margin-top: -300px; /* Reduzi o valor para mover o botão mais para cima */
+    justify-content: left;
+    margin-top: -180px;/* Reduzi o valor para mover o botão mais para cima */
+    padding-left: 525px;
 }
 
 .inscricao {
@@ -89,4 +91,13 @@ footer{
     .menu-toglle{
         display: block;
     }
+}
+
+.h3{
+    font-size: 20px;  /* Tamanho menor */
+    text-align: right;  /* Alinha o texto à direita */
+    margin-top: -400px;  /* Move a frase para cima */
+    margin-right: 50px;  /* Espaço à direita */
+    margin-bottom: auto;
+    padding-right: 320px;
 }
