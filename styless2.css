@@ -55,21 +55,3 @@ div {
         text-transform: uppercase;
     }
 }
-
-.cadastrar {
-    background-color: rgb(15, 243, 15);
-
-    &:hover {
-        background-color: yellow;
-        color: #000;
-    }
-}
-
-.limpar {
-    background-color: #313030;
-
-    &:hover {
-        background-color: #ffffff;
-        color: #000;
-    }
-}
