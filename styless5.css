@@ -1,13 +1,7 @@
-body {
-  background-color: #ffffff;
-  color: #fff;
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
+/* ==== NAVBAR ==== */
 .navbar {
-  position: static;
+  position: fixed;
+  top: 0;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.85);
   display: flex;
@@ -54,62 +48,88 @@ body {
   color: #ff6600;
 }
 
-.accordion {
-  width: 80%;
-  margin: 20px auto;
-}
-
-.accordion-item {
-  background-color: #1a1a1a;
-  border-bottom: 1px solid #ff6600;
-}
-
-.accordion-header {
-  padding: 15px 20px;
-  cursor: pointer;
-  position: relative;
-  font-size: 1.2em;
-  color: #ff6600;
-}
-
-.accordion-header::after {
-  content: '+';
-  position: absolute;
-  right: 20px;
-  font-size: 1.5em;
-  transition: transform 0.3s ease;
-}
-
-.accordion-header.active::after {
-  content: '-';
-}
-
-.accordion-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease;
-  background-color: #262626;
-  padding: 0 20px;
-}
-
-.accordion-content ul {
-  list-style: none;
-  padding: 15px 0;
+/* ==== PLANOS ==== */
+body {
   margin: 0;
+  padding-top: 100px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
 }
 
-.accordion-content li {
-  padding: 8px 0;
-  border-bottom: 1px solid #333;
+.planos {
+  padding: 60px 20px;
+  text-align: center;
 }
 
-.accordion-content li:last-child {
-  border-bottom: none;
+.planos h2 {
+  font-size: 32px;
+  color: #1e1e1e;
+  margin-bottom: 40px;
 }
 
-.accordion-content a {
+.planos-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.plano {
+  background-color: white;
+  border: 2px solid #ff6600;
+  border-radius: 10px;
+  padding: 30px 20px;
+  width: 280px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.plano:hover {
+  transform: scale(1.05);
+}
+
+.plano h3 {
   color: #ff6600;
-  text-decoration: none;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.preco {
+  font-size: 22px;
+  font-weight: bold;
+  color: #1e1e1e;
+  margin: 10px 0 20px;
+}
+
+.plano ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.plano ul li {
+  margin: 10px 0;
+  color: #555;
+}
+
+.plano button {
+  background-color: #000000;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.plano button:hover {
+  background-color: #ff6600;
+}
+
+.destaque {
+  border: 3px solid #ff6600;
+  background-color: #fff8e1;
 }
 
 /* ==== RODAPÉ ==== */
