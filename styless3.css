@@ -1,71 +1,76 @@
 body {
-      background-color: #ffffff;
-      color: #fff;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
+  background-color: #ffffff;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
 header {
-      background-color: #000000;
-      padding: 20px;
-      text-align: center;
-    }
+  background-color: #000000;
+  padding: 20px;
+  text-align: center;
+}
 
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
 
-    .accordion {
-      width: 80%;
-      margin: 20px auto;
-    }
+.accordion {
+  width: 80%;
+  margin: 20px auto;
+}
 
-    .accordion-item {
-      background-color: #1a1a1a;
-      border-bottom: 1px solid #ff6600;
-    }
+.accordion-item {
+  background-color: #1a1a1a;
+  border-bottom: 1px solid #ff6600;
+}
 
-    .accordion-header {
-      padding: 15px 20px;
-      cursor: pointer;
-      position: relative;
-      font-size: 1.2em;
-      color: #ff6600;
-    }
+.accordion-header {
+  padding: 15px 20px;
+  cursor: pointer;
+  position: relative;
+  font-size: 1.2em;
+  color: #ff6600;
+}
 
-    .accordion-header::after {
-      content: '+';
-      position: absolute;
-      right: 20px;
-      font-size: 1.5em;
-      transition: transform 0.3s ease;
-    }
+.accordion-header::after {
+  content: '+';
+  position: absolute;
+  right: 20px;
+  font-size: 1.5em;
+  transition: transform 0.3s ease;
+}
 
-    .accordion-header.active::after {
-      content: '-';
-    }
+.accordion-header.active::after {
+  content: '-';
+}
 
-    .accordion-content {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.3s ease;
-      background-color: #262626;
-      padding: 0 20px;
-    }
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  background-color: #262626;
+  padding: 0 20px;
+}
 
-    .accordion-content ul {
-      list-style: none;
-      padding: 15px 0;
-      margin: 0;
-    }
+.accordion-content ul {
+  list-style: none;
+  padding: 15px 0;
+  margin: 0;
+}
 
-    .accordion-content li {
-      padding: 8px 0;
-      border-bottom: 1px solid #333;
-    }
+.accordion-content li {
+  padding: 8px 0;
+  border-bottom: 1px solid #333;
+}
 
-    .accordion-content li:last-child {
-      border-bottom: none;
-    }
+.accordion-content li:last-child {
+  border-bottom: none;
+}
+
+.accordion-content a {
+  color: #ff6600;
+  text-decoration: none;
+}
