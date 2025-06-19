@@ -12,9 +12,8 @@
     border-color: rgb(255, 51, 0);
 }
 
-.main-content{
-    padding: 2rem;
-    min-height: 80vh;
+.main-content {
+  padding: 2rem 0;
 }
 
 .imagem-direita {
@@ -24,6 +23,12 @@
     width: 25%; /* mantém o tamanho normal da imagem */
     max-width: 100%; /* garante que ela não quebre o layout em telas pequenas */
     margin-top: -350px;
+}
+
+.logotipo{
+    margin-left: auto;
+    width: 300px;
+    height: auto; /* mantém a proporção */
 }
 
 .rodape {
@@ -87,14 +92,14 @@
     text-align: right;  /* Alinha o texto à direita */
     margin-top:25px;  /* Move a frase para cima */
     margin-right: 50px;  /* Espaço à direita */
-    margin-bottom: auto;
+    margin-bottom: -10px !important;
 }
 
 /* Frase centralizada (preta e laranja) */
 .titulo-centralizado {
     text-align: left;  /* Centraliza o texto */
-    margin-top: 200px;  /* Move a frase para baixo */
-    font-size: 50px;  /* Ajuste de tamanho, conforme necessário */
+    margin-top: 20px !important;  /* Move a frase para baixo */
+    font-size: 55px;  /* Ajuste de tamanho, conforme necessário */
     font-family: sans-serif;
 }
 
@@ -103,12 +108,24 @@
     text-shadow: 1px 1px 2px black;
 }
 
-/* Botão Inscrição */
+.carousel-wrapper {
+  width: 500px;
+  margin: -200px auto 0 auto; /* espaçamento automático centralizado */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+#carouselMini img {
+  height: 350px;
+  object-fit: cover;
+}
+
+/* Ajuste o botão para não subir demais */
 .inscricao-container {
-    display: flex;
-    justify-content: left;
-    margin-top: -180px;/* Reduzi o valor para mover o botão mais para cima */
-    padding-left: 525px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Valor positivo agora */
 }
 
 .inscricao {
@@ -143,7 +160,7 @@
 .h3{
     font-size: 20px;  /* Tamanho menor */
     text-align: right;  /* Alinha o texto à direita */
-    margin-top: -400px;  /* Move a frase para cima */
+    margin-top: -200px !important;  /* Move a frase para cima */
     margin-right: 50px;  /* Espaço à direita */
     margin-bottom: auto;
     padding-right: 320px;

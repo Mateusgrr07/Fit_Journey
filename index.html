@@ -2,54 +2,73 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styless1.css">
-    <title>Fit Journey</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styless1.css">
+  <title>Fit Journey</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <nav class="navbar"
-        style="background-color: #111111; padding: 10px 0; display: flex; justify-content: center; align-items: center;">
-        <input type="checkbox" id="menu-checkbox" hidden>
-        <label for="menu-checkbox" class="menu-toglle" style="font-size: 30px; color: rgb(236, 94, 12);">&#9776;</label>
-        <div style="display: flex; justify-content: center; align-items: center; height: 10vh; text-align: center;">
-            <h3 style="font-size: 36px; color: white; margin: 0;">
-                <span style="color: white;">DÊ INÍCIO A SUA </span>
-                <span style="color: rgb(189, 63, 24);">JORNADA!</span>
-            </h3>
-        </div>
-    </nav>
-
-    <div>
-    <img src="imagens/imgg.jpg" alt="logo">
+  <nav class="navbar"
+    style="background-color: #111111; padding: 10px 0; display: flex; justify-content: center; align-items: center;">
+    <input type="checkbox" id="menu-checkbox" hidden>
+    <label for="menu-checkbox" class="menu-toglle" style="font-size: 30px; color: rgb(236, 94, 12);">&#9776;</label>
+    <div style="display: flex; justify-content: center; align-items: center; height: 10vh; text-align: center;">
+      <h3 style="font-size: 36px; color: white; margin: 0;">
+        <span style="color: white;">DÊ INÍCIO A SUA </span>
+        <span style="color: rgb(189, 63, 24);">JORNADA!</span>
+      </h3>
     </div>
+  </nav>
 
-    <div class="h3">
-        <h3>Bem-vindo</h3>
-    </div>
+  <div>
+    <img src="imagens/imgg.jpg" alt="logo" class="logotipo">
+  </div>
 
-    <div class="motivacional">
+  <div class="h3">
+    <h3>Bem-vindo</h3>
+  </div>
+
+  <div class="motivacional">
     <p>
-        Dê início a uma nova fase da sua vida — onde saúde, disposição e autoestima <br> caminham lado a lado.
-        Aqui é o lugar para quem quer transformar o corpo, <br> fortalecer a mente e conquistar uma rotina mais leve e cheia de vitalidade!
+      Dê início a uma nova fase da sua vida — onde saúde, disposição e autoestima <br> caminham lado a lado.
+      Aqui é o lugar para quem quer transformar o corpo, <br> fortalecer a mente e conquistar uma rotina mais leve e
+      cheia de vitalidade!
     </p>
-    </div>
-    <main class="main-content">
-        <h1 class="titulo-centralizado">
-            FAÇA JÁ<br>
-            SUA <span>ROTINA</span><br>
-            DE <span>TREINOS</span>
-        </h1>
-    </main>
+  </div>
+  <main class="main-content">
+    <h1 class="titulo-centralizado">
+      FAÇA JÁ<br>
+      SUA <span>ROTINA</span><br>
+      DE <span>TREINOS</span>
+    </h1>
+  </main>
 
-    <div class="inscricao-container">
-        <button class="inscricao">
-            <a href="formulario.html">INSCREVA-SE</a>
-        </button>
+<div class="carousel-wrapper">
+  <div id="carouselMini" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="imagens/slide1.jpg" class="d-block w-100" alt="Slide 1">
+      </div>
+      <div class="carousel-item">
+        <img src="imagens/slide2.jpg" class="d-block w-100" alt="Slide 2">
+      </div>
+      <div class="carousel-item">
+        <img src="imagens/slide3.jpg" class="d-block w-100" alt="Slide 3">
+      </div>
     </div>
-    <img src="imagens/imgg2.jpg" alt="foto" class="imagem-direita">
-    <footer class="rodape">
+  </div>
+</div>
+
+  <div class="inscricao-container">
+    <button class="inscricao">
+      <a href="formulario.html">INSCREVA-SE</a>
+    </button>
+  </div>
+  <img src="imagens/imgg2.jpg" alt="foto" class="imagem-direita">
+
+  <footer class="rodape">
     <div class="rodape-container">
       <div class="rodape-coluna">
         <h4>Fit Journey</h4>
@@ -68,7 +87,7 @@
       <p>&copy; 2025 Fit Journey. Todos os direitos reservados.</p>
     </div>
   </footer>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
