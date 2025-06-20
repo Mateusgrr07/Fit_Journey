@@ -1,42 +1,68 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Fit Journey</title>
     <link rel="stylesheet" href="styless2.css">
-    <title>Fit Journey</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <section class="box">
-        <main>
-            <form>
-                <header>
-                    <h1>Cadastro de usuario</h1>
-                </header>
-                <div>
-                <label for="nome-input" class="nome">Nome</label>
-                <input type="text" class="nome-input">
+    <div class="formulario">
+        <form class="form" id="form">
+            <h2>Cadastro de Usuário</h2>
+
+            <div class="input-group">
+                <label for="nome"><i class="fas fa-user"></i></label>
+                <input type="text" id="nome" placeholder="Nome completo" required>
+            </div>
+
+            <div class="input-group">
+                <label for="email"><i class="fas fa-envelope"></i></label>
+                <input type="email" id="email" placeholder="Email" required>
+            </div>
+
+            <div class="input-group">
+                <label for="senha"><i class="fas fa-lock"></i></label>
+                <input type="password" id="senha" placeholder="Senha" required>
+                <div id="forcaSenha"></div>
+            </div>
+
+            <div class="input-group">
+                <label for="confirmar"><i class="fas fa-lock"></i></label>
+                <input type="password" id="confirmar" placeholder="Confirmar Senha" required>
+                <small id="erroSenha"></small>
+            </div>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+
+    <footer class="rodape">
+        <div class="rodape-container">
+            <div class="rodape-coluna">
+                <h4>Fit Journey</h4>
+                <p>Sua jornada rumo ao corpo e mente saudáveis começa aqui.</p>
+            </div>
+
+            <div class="rodape-coluna">
+                <h4>Redes Sociais</h4>
+                <div class="rodape-redes">
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/733/733547.png" alt="Facebook"></a>
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/733/733558.png" alt="Instagram"></a>
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/733/733585.png" alt="WhatsApp"></a>
                 </div>
-                <div>
-                <label for="email-input" class="email">Email</label>
-                <input type="text" class="email-input">
-                </div>
-                <div>               
-                <label for="senha-input" class="senha">Senha</label>
-                <input type="password" class="senha-input">
-                </div>
-                <div>
-                <label for="conf-senha" class="confirmar">Confirmar Senha</label>
-                <input type="password" class="conf-senha">
-                </div>
-                <button type="submit">
-                    <a href="home.html">Enviar</a>
-                </button>
-            </form>
-        </main>
-    </section>
+            </div>
+        </div>
+
+        <div class="rodape-direitos">
+            <p>&copy; 2025 Fit Journey. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

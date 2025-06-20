@@ -4,6 +4,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -20,15 +21,16 @@ body {
 .nome {
   font-size: 1.5rem;
   font-weight: bolder;
-  padding-left: 75px;
+  padding-left: 20px;
   color: #ff6600;
 }
 
 .nav-links {
   display: flex;
   text-align: center;
-  padding-right: 150px;
+  padding-right: 20px;
   gap: 30px;
+  flex-wrap: wrap;
 }
 
 .nav-links a {
@@ -55,7 +57,8 @@ body {
 }
 
 .accordion {
-  width: 80%;
+  width: 90%;
+   max-width: 800px;
   margin: 20px auto;
 }
 
@@ -166,4 +169,23 @@ body {
   color: #999;
   border-top: 1px solid #333;
   padding-top: 15px;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding-right: 0;
+  }
+
+  .nome {
+    padding-left: 10px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .accordion {
+    width: 95%;
+  }
 }
